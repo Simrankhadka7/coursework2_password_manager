@@ -1,3 +1,6 @@
+#cousework2-password manager
+#studen id 210338
+#simran khadka
 import random
 from tkinter import *
 import tkinter.messagebox
@@ -29,7 +32,7 @@ def getPass(length):
 
 #Write into file
 def writeInFile(content):
-    try:
+    try: #error handling
         fileToWrite = open("passDb.txt","a")
         
     except PermissionError:
@@ -76,7 +79,7 @@ password = [""]
 def store():
     if storeData():
         
-        tkinter.messagebox.showinfo("Pass Status","Password Stored in Secure DB")
+        tkinter.messagebox.showinfo("Pass Status","Password Stored in Secure DB") #file handling
         
         
     else:
